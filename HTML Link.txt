@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h2>HTML Link</h2>
+<p>Ini adalah link akun GitHub saya:</p>
+<a href="https://github.com/Stefanifani">Stefanifani</a>
+
+</body>
+</html>
