@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Quotation and Citation Elements</title>
+</head>
+<body>
+<p>Here is a quote from Brain Academy's website:</p>
+
+<blockquote cite="https://www.brainacademy.id/blog/teks-eksplanasi">
+	Teks eksplanasi adalah teks yang berisi penjelasan mengenai suatu fenomena atau peristiwa, baik fenomena alam maupun fenomena sosial yang terjadi dalam kehidupan sehari-hari. Fenomena alam yang dimaksud bisa berupa tanah longsor, gempa bumi, gunung meletus, kebakaran hutan, proses terbentuknya pelangi, dan sebagainya. Sedangkan fenomena sosial yang dapat dijelaskan oleh teks eksplanasi antara lain; aksi demonstrasi, tawuran, peperangan, dan lain-lain.
+</blockquote>
+
+<p>This is a short quatations:<br>As Steve Jobs once said, <q>The only way to do great work is to love what you do.</q></p>
+
+<p>HTML Abbreviations:<br>The <abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating Web pages.</p>
+
+<p>The HTML address:</p>
+<address>
+Nama Penerima: Rengganis Melati<br>
+Alamat:Jl. Pahlawan No. 78, Kota Jakarta Selatan<br> 
+DKI Jakarta, 12530<br> 
+Indonesia
+</address>
+
+<p>HTML cite:<br>
+<img src="C:\Users\USER\Downloads\Sang_Pemimpi_sampul.jpg" width="220" height="277" alt="Sang Pemimpi"></p>
+<p><cite>Sang Pemimpi</cite> oleh Andrea Hirata. Diterbitkan pada 2008</p>
+
+<p>HTML Bi-Directional Override:<br>
+<bdo dir="rtl">The only way to do great work is to love what you do.</bdo></p>
+
+</body>
+</html>
+
+
