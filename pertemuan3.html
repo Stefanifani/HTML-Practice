@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang</h1>
+        <p>Belajar elemen semantik HTML5</p>
+    </header>
+    <nav>
+      <a href="#tentang">tentang</a> |
+      <a href="#kursus">kursus</a> |
+      <a href="#kontak">kontak</a> |
+      <a href="#pendaftaran">pendaftaran</a>
+    </nav>
+    <section id="tentang">
+        <h2>Tentang Halaman Ini</h2>
+        <p>Ini merupakan section menu Tentang</p>
+    </section>
+    <section id="kursus">
+        <h2>Daftar Kursus</h2>
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>Nama Kursus</th>
+                <th>Durasi</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Dasar HTML&CSS</th>
+                <th>4 Minggu</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>JavaScript Fundamental</th>
+                <th>6 Minggu</th>
+            </tr>
+        </table>
+    </section>
+    <section id="kontak">
+        <h2>Hubungi Kami</h2> 
+        <form action="/action_page.php">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="pesan">Pesan:</label><br>
+            <input type="text" id="pesan" name="pesan" style="height: 100px;"><br><br>
+            <input type="submit" value="Submit">
+          </form>  
+    </section>
+    <section id="pendaftaran">
+        <h2>Form Pendaftaran Mahasiswa Baru Kampus ABC</h2>
+        <form action="/action_page.php">
+            <label for="name">Nama Lengkap:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="no-telp">No.Telp:</label><br>
+            <input type="text" id="no-telp" name="no-telp"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="tanggal-lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir"><br>
+
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" id="laki-laki" name="gender" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="gender" value="perempuan">
+            <label for="perempuan">Perempuan</label><br>
+
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" style="height: 100px;"></textarea><br>
+
+            <label for="sekolah">Asal Sekolah:</label><br>
+            <input type="text" id="sekolah" name="sekolah"><br>
+
+            <label for="agama">Agama:</label><br>
+            <input type="text" id="agama" name="agama"><br>
+
+            <label for="hobi">Hobi yang diminati:</label><br>
+            <input type="checkbox" id="hobi" name="hobi" value="seni">
+            <label for="hobi1">Seni</label><br>
+            <input type="checkbox" id="hobi" name="hobi" value="olahraga">
+            <label for="hobi2">Olahraga</label><br>
+            <input type="checkbox" id="hobi" name="hobi" value="teknologi">
+            <label for="hobi3">Teknologi</label><br>
+            <input type="checkbox" id="hobi" name="hobi" value="kuliner">
+            <label for="hobi4">Kuliner</label><br>
+            <input type="checkbox" id="hobi" name="hobi" value="aktivitas-alam">
+            <label for="hobi5">Aktivitas Alam</label><br>
+
+            <label for="nama">Nama Ayah:</label><br>
+            <input type="text" id="nama" name="nama"><br>
+
+            <label for="nama">Nama Ibu:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>  
+
+            
+    </section>
+    <footer>
+        <p>&copy; 2025 oleh Stefani Fransiska. </p>
+    </footer>
+
+</body>
+</html>
