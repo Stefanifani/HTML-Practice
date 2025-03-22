@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Id in Javascript</title>
+</head>
+<body>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<h2>HTML (HyperText Markup Language)</h2>
+<p>
+    HTML (HyperText Markup Language) pertama kali diciptakan oleh Tim Berners-Lee pada tahun 1991<br>
+    sebagai bagian dari pengembangan World Wide Web. Berners-Lee merancang HTML untuk<br>
+    memungkinkan pertukaran informasi di internet melalui dokumen-dokumen yang saling terhubung<br>
+    dengan tautan. HTML menggunakan tag-tag yang memberi instruksi kepada browser<br>
+    tentang bagaimana menampilkan konten di halaman web.
+</p>
+
+<p>
+    Seiring berjalannya waktu, HTML terus berkembang untuk mendukung fitur-fitur baru di web.<br>
+    Pada tahun 2014, HTML5 dirilis sebagai versi terbaru yang memungkinkan pengintegrasian elemen multimedia seperti<br>
+    audio, video, dan aplikasi web yang lebih interaktif. Meskipun teknologi web terus berkembang,<br>
+    HTML tetap menjadi fondasi dasar dalam pembuatan hampir semua situs web yang ada di internet saat ini.<br>
+</p>
+
+<h2 id="myHeader">Hai, terima kasih telah mengunjungi situs ini!</h2>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Semoga informasi ini membantu.";
+}
+</script>
+
+</body>
+</html>
+

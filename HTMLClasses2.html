@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class in JavaScript</title>
+</head>
+<body>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "ubi":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="ubi">Ubi Jalar</h2>
+<p>Memiliki kulit yang bisa berwarna ungu, oranye, atau putih.</p>
+
+<h2 class="ubi">Ubi Kayu</h2>
+<p>Memiliki kulit cokelat kasar dan daging putih atau kuning.</p>
+
+<h2 class="ubi">Ubi Cilembu</h2>
+<p>Jenis ubi jalar khas Indonesia yang memiliki rasa manis alami.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("ubi");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
