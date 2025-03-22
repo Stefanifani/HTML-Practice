@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>HTML Javascript</title>
+</head>
 <body>
 
-<h1>My First JavaScript</h1>
-
+<h2>Display the date and time</h2>
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="document.getElementById('datetime').innerHTML = Date()">
 Click me to display Date and Time.</button>
+<p id="datetime"></p>
 
-<p id="demo"></p>
-
-<p>JavaScript can change the content of an HTML element:</p>
-
+<h2>Change the content of an HTML element</h2>
 <button type="button" onclick="myFunction()">Click Me!</button>
-
-<p id="demo">This is a demonstration.</p>
-
+<p id="demo">Selamat Datang</p>
 <script>
 function myFunction() { 
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  document.getElementById("demo").innerHTML = "Terimakasih telah berkunjung";
 }
 </script>
 
-
+<h2>Change the style of an HTML element.</h2>
+<button type="button" onclick="changestyle()">Click Me!</button>
+<p id="style">Selamat Datang</p>
+<script>
+function changestyle() {
+  document.getElementById("style").style.fontSize = "25px"; 
+  document.getElementById("style").style.color = "white";
+  document.getElementById("style").style.backgroundColor = "green";        
+}
+</script>
 
 </body>
 </html> 
