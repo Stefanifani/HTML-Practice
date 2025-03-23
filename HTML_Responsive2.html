@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Responsive</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  border-bottom: 0,5px solid #f1f1f1;
+  border-top: 2px solid #f1f1f1;
+  background-color: lightskyblue;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:lightskyblue;padding:15px;text-align:center;">
+  <h1>New Zealand</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem" onclick="showContent('awal')">Awal</div>
+    <div class="menuitem" onclick="showContent('sejarah')">Sejarah</div>
+    <div class="menuitem" onclick="showContent('geografi')">Geografi</div>
+    <div class="menuitem" onclick="showContent('budaya')">Budaya</div>
+  </div>
+
+  <div class="main">
+    <div id="awal" class="content">
+      <h2>New Zealand</h2>
+      <p>Sebuah negara kepulauan di barat daya Samudera Pasifik; kira-kira 1.500 kilometer di tenggara Australia, di seberang Laut Tasman;<br>
+        dan kira-kira 1.000 kilometer di selatan negara-negara kepulauan Pasifik, yakni Kaledonia Baru, Fiji, dan Tonga.<br> 
+        Negara ini terdiri dari dua pulau besar (Pulau Utara dan Pulau Selatan) dan beberapa pulau lainnya yang lebih kecil.</p>
+    </div>
+    <div id="sejarah" class="content" style="display:none;">
+      <h2>Sejarah</h2>
+      <p>New Zealand pertama kali dihuni oleh orang Polinesia Timur antara 1250-1300, yang kemudian mengembangkan budaya Māori.<br> 
+        Beberapa kelompok Māori bermigrasi ke Kepulauan Chatham dan membentuk budaya Moriori.<br> 
+        Populasi Moriori menurun drastis antara 1835-1862 akibat serangan Māori dan penyakit Eropa, dengan yang terakhir meninggal pada 1933.</p>
+    </div>
+    <div id="geografi" class="content" style="display:none;">
+      <h2>Geografi</h2>
+      <p>New Zealand terdiri dari dua pulau utama, dan sejumlah pulau yang lebih kecil, terletak di dekat pusat belahan lautan.<br> 
+        Pulau Utara dan Pulau Selatan dipisahkan oleh Selat Cook, selebar 22 kilometer di celah tersempitnya.<br>
+        Di samping Pulau Utara, dan Pulau Selatan, lima pulau terbesar yang dihuni adalah Pulau Stewart, Pulau Chatham, Pulau Great Barrier, Pulau d'Urville dan Pulau Waiheke.</p>
+    </div>
+    <div id="budaya" class="content" style="display:none;">
+      <h2>Budaya</h2>
+      <p>Didominasi oleh budaya Māori yang kaya dengan tradisi, bahasa, seni, dan spiritualitas, seperti tarian haka dan ukiran kayu. <br>
+        Masyarakat Māori terbagi dalam suku (iwi) dan sub-suku (hapū), dengan sistem kepercayaan yang erat kaitannya dengan alam dan leluhur.<br> 
+        Selain itu, budaya Pākehā (Eropa) juga berpengaruh, terutama sejak kedatangan pemukim Eropa pada abad ke-19, dengan gaya hidup Barat dan kegiatan modern.<br> 
+        Dalam kehidupan kontemporer, seni, musik, film, serta kegiatan luar ruangan seperti hiking dan rugby menjadi bagian penting dari identitas New Zealand.</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>Catatan</h2>
+    <p>Zeeland diucapkan sebagai "Zealand" dalam bahasa Inggris. Nama Selandia Baru tidaklah diturunkan dari pulau milik Denmark, Sjælland.</p>
+    <p>Selandia Baru memiliki hampir 4.000 spesies asli lumut kerak dan tumbuhan tak-berpembuluh lainnya dan hanya 40 persen darinya adalah endemik.</p>
+  </div>
+</div>
+
+<div style="background-color:lightskyblue;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+<script>
+  function showContent(contentId) {
+    // Sembunyikan semua konten
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(function(content) {
+      content.style.display = 'none';
+    });
+
+    // Tampilkan konten yang sesuai
+    const selectedContent = document.getElementById(contentId);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
