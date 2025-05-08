@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+}
+
+p.test1 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: keep-all;
+}
+
+p.test2 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: break-all;
+}
+
+p.mode1 {
+  writing-mode: horizontal-tb; 
+}
+
+span.mode2 {
+  writing-mode: vertical-rl; 
+}
+
+p.mode2 {
+  writing-mode: vertical-rl; 
+}
+</style>
+</head>
+<body>
+
+<p>Hover over the two divs below, to see the entire text.</p>
+<div class="test" style="text-overflow:ellipsis;">Warna dapat mengubah suasana hati seperti cahaya yang mengubah rupa bayangan.</div>
+<br>
+<div class="test" style="text-overflow:clip;">Warna dapat mengubah suasana hati seperti cahaya yang mengubah rupa bayangan.</div>
+
+<h1>The word-break Property</h1>
+<p class="test1">Warna dapat mengubah suasana hati seperti cahaya yang mengubah rupa bayangan.</p>
+<p class="test2">Warna dapat mengubah suasana hati seperti cahaya yang mengubah rupa bayangan.</p>
+
+<h1>The writing-mode Property</h1>
+<p class="mode1">Warna dapat mengubah suasana hati.</p>
+<p>Warna dapat mengubah suasana hati <span class="mode2">seperti cahaya</span> yang mengubah rupa bayangan.</p>
+<p class="mode2">Warna dapat mengubah suasana hati.</p>
+</body>
+</html>
+
+

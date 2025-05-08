@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  font-size: 20px;
+  padding: 20px;
+  color: black;
+}
+.mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(bunga\ lavender.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>A linear gradient as a mask layer:</h3>
+
+<div class="mask1">
+<p>Bunga matahari adalah tanaman tahunan yang berasal dari Amerika Utara dan kini dibudidayakan di berbagai belahan dunia. 
+Tanaman ini dapat tumbuh tinggi, bahkan hingga lebih dari 3 meter, dengan batang kokoh dan tegak. 
+Daunnya besar, kasar, dan berbentuk hati.
+</p>
+</div>
+
+<h3>An SVG mask layer (formed as a star):</h3>
+<svg width="600" height="400">
+  <defs>
+    <mask id="svgmask2">
+      <!-- latar hitam agar luar bentuk tidak terlihat -->
+      <rect width="100%" height="100%" fill="black" />
+      <!-- bintang putih, bagian ini akan tampak -->
+      <polygon fill="white" points="300,20 230,370 580,150 20,150 470,370" />
+    </mask>
+  </defs>
+
+  <image 
+    x="0" y="0" 
+    width="600" height="400" 
+    xlink:href="bunga lavender.jpg" 
+    mask="url(#svgmask2)" />
+</svg>
+
+<h3>Original image:</h3>
+<img src="bunga lavender.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+</html>
+
+

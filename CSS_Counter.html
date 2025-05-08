@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+</style>
+</head>
+<body>
+
+
+<h1>Warna Primer</h1>
+<h2>Merah</h2>
+<h2>Biru</h2>
+<h2>Kuning</h2>
+
+<h1>Warna Sekunder</h1>
+<h2>Hijau</h2>
+<h2>Orange</h2>
+<h2>Ungu</h2>
+
+<h1>Warna Netral</h1>
+<h2>Hitam</h2>
+<h2>Putih</h2>
+<h2>Abu-abu</h2>
+
+</body>
+</html>
+
+
